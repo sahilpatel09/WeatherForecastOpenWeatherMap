@@ -9,3 +9,35 @@ city = 'Ahmedabad'
 #change the variable name to intended city to get the desired output, in views.py
 # For Ex. change it to New York or Las Vegas or Mumbai
 ```
+![Image of the frontend of application](https://raw.githubusercontent.com/sahilpatel09/WeatherForecastOpenWeatherMap/master/weatherForecast.png)
+
+## Make project
+You can create the project as if you would do any django based project.
+fork this repo.
+```git
+git clone https://github.com/sahilpatel09/WeatherForecastOpenWeatherMap.git
+```
+Create your virtual environment
+
+**MacOS / Linux**
+
+```git
+virtualenv --no-site-packages env
+source env/bin/activate
+```
+**Windows**
+
+```git
+virtualenv env
+.\env\Scripts\activate
+```
+##### Install packages
+
+* Django
+* Requests
+
+**Requirementes**
+You will need an API of OpenWeatherMap. You can go on the site and sign up for the API and then can use it.
+
+## FrontEnd Theme Used from w3Layouts
+I used an HTML template from w3layouts which you can find here. 
