@@ -37,7 +37,14 @@ virtualenv env
 * Requests
 
 **Requirementes**
+
 You will need an API of OpenWeatherMap. You can go on the site and sign up for the API and then can use it.
 
+Once done run this command to run the server.
+```git
+python manage.py runserver
+```
+
 ## FrontEnd Theme Used from w3Layouts
-I used an HTML template from w3layouts which you can find here. 
+I used an HTML template from w3layouts.
+Credits: www.w3layouts.com
