@@ -6,7 +6,7 @@ import datetime
 
 def forcast(request):
     #daily data through API
-    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=831f77dcd47accb0ad81ae949234638f'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=your_api_id'
 
     # city variable change it to change the data. For ex. New York
     city = 'Ahmedabad'
@@ -25,7 +25,7 @@ def forcast(request):
     }
 
     #forcasted weather data API
-    v = 'http://api.openweathermap.org/data/2.5/forecast?q={}&&units=metric&appid=831f77dcd47accb0ad81ae949234638f'
+    v = 'http://api.openweathermap.org/data/2.5/forecast?q={}&&units=metric&appid=your_api_id'
     a = v.format(city)
     #accessing the API json data
     full = requests.get(a).json()
