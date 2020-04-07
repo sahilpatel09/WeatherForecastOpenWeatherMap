@@ -1,0 +1,362 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{weather.city}}'s Weather Forecastf</title>
+<!--mobile-apps-->
+
+	<style>
+		/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+/*--reset--*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/*--start editing from here--*/
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*--end reset--*/
+body {
+    background:#f1c40f;
+    background-attachment: fixed;
+	background-size:cover;
+	font-family: 'Josefin Sans', sans-serif;
+}
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #000;
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*--main--*/
+.main {
+    padding: 6em 0 0;
+}
+.main-info {
+    width: 50%;
+    margin: 5em auto;
+    background: #32457c;
+    padding: 2em;
+	border-radius: 5px;
+}
+/*--//main--*/
+.weather-grids {
+    float: left;
+    width: 33%;
+}
+.weather-grids.weather-mdl {
+    text-align: center;
+}
+.weather-grids:nth-child(3) {
+    text-align: right;
+}
+.weather-grids h3 {
+    font-size: 1.5em;
+    color: #fff;
+}
+.weather-grids h3.fri {
+    font-weight: 900;
+    color: #FFD700;
+	margin-top: 0.7em;
+	font-size:35px;
+}
+.weather-grids h2 {
+    font-size: 3em;
+    font-weight: 300;
+	color: #fff;
+}
+.weather-grids h4 {
+    font-size: 1em;
+    color: #fff;
+}
+.weather-bottom {
+    text-align: center;
+    margin-top: 2em;
+}
+.weather-bottom ul li {
+    display: inline-block;
+    padding: 1em 0;
+    float: left;
+    width: 16.6%;
+}
+.weather-bottom ul li.bg{
+    background: #314277;
+}
+.weather-bottom h4 {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 100;
+}
+figure.icons {
+    margin: 0.5em 0;
+}
+.weather-bottom h5 {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 600;
+}
+.weather-bottom h6 {
+    font-size: 1em;
+    color: #FFD700;
+    margin-top: 0.5em;
+}
+/*--copyright--*/
+.copyright {
+    margin: 2em 0 1em;
+    text-align: center;
+}
+.copyright p {
+    font-size: 1.1em;
+    color: #000;
+	line-height:1.8em;
+}
+.copyright p a{
+    color: #000;
+}
+.copyright p a:hover{
+    color: #314277;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+/*--//copyright--*/
+/*---- responsive-design -----*/
+@media(max-width:1440px){
+.main {
+    padding: 5em 0 0;
+}
+}
+@media(max-width:1366px){
+.main-info {
+    width: 50%;
+}
+}
+@media(max-width:1280px){
+.main-info {
+    width: 50%;
+}
+}
+@media(max-width:1080px){
+.main-info {
+    width: 46%;
+}
+}
+@media(max-width:1024px){
+.main-info {
+    width: 47%;
+}
+}
+@media(max-width:900px){
+.main-info {
+    width: 50%;
+}
+}
+@media(max-width:800px){
+.main {
+    padding: 4em 0 0;
+}
+.main-info {
+	margin: 4em auto;
+}
+h1 {
+    font-size: 2.8em;
+}
+.main-info {
+    width: 58%;
+}
+}
+@media(max-width:640px){
+h1 {
+    font-size: 2.6em;
+}
+.main-info {
+    width: 70%;
+	padding: 1.5em;
+}
+.weather-grids h2 {
+    font-size: 2.8em;
+}
+}
+@media(max-width:480px){
+h1 {
+    font-size: 2.2em;
+}
+.main-info {
+    width: 82%;
+    margin: 3em auto;
+}
+.weather-grids h3 {
+    font-size: 1.3em;
+}
+.weather-grids h2 {
+    font-size: 2.5em;
+}
+.weather-grids h4 {
+    font-size: 0.8em;
+}
+.weather-bottom h5 {
+    font-size: 1.1em;
+}
+.weather-bottom h6 {
+    font-size: 0.9em;
+}
+.copyright p {
+    font-size: 1em;
+}
+.main {
+    padding: 3em 0 0;
+}
+}
+@media(max-width:414px){
+.main-info {
+    padding: 1.5em 1em;
+}
+.weather-bottom h4 {
+    font-size: 0.9em;
+}
+canvas#clear-day {
+    width: 60px;
+    height: 60px;
+}
+.weather-bottom canvas {
+    width: 30px;
+    height: 30px;
+}
+.weather-bottom {
+    margin-top: 1.5em;
+}
+}
+@media(max-width:375px){
+h1 {
+    font-size: 1.8em;
+}
+.main {
+    padding: 2em 0 0;
+}
+}
+@media(max-width:320px){
+h1 {
+    font-size: 1.6em;
+}
+.main-info {
+    width: 82%;
+    margin: 1.5em auto;
+    padding: 1em;
+}
+.weather-grids h2 {
+    font-size: 2em;
+}
+.weather-grids h4 {
+    font-size: 0.7em;
+}
+.weather-grids h3 {
+    font-size: 1.1em;
+}
+canvas#clear-day {
+    width: 55px;
+    height: 55px;
+}
+.weather-bottom canvas {
+    width: 30px;
+    height: 30px;
+}
+.weather-bottom ul li {
+    width: 14.2%;
+	padding: 0.5em 0;
+}
+.weather-bottom h5 {
+    font-size: 0.9em;
+}
+.weather-bottom h6 {
+    font-size: 0.8em;
+}
+}
+/*--//responsive-design---*/
+	</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Animated Weather Widget template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--//mobile-apps-->
+<!--Custom Theme files-->
+<link href='//fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--//web-font-->
+<!--skycons-icons-->
+<!--//skycons-icons-->
+</head>
+<body>
+
+	<!-- main -->
+	<div class="main">
+		<h1>{{weather.city}}'s Weather Forecast</h1>
+		<div class="main-info">
+			<div class="weather-top">	
+				<div class="weather-grids">
+					<h3 class="fri">{{weather.city}} </h3>
+					<h3>FeelsLike {{weather.feelslike_weather}}</h3>
+				</div>
+				<div class="weather-grids weather-mdl">
+					<canvas id="clear-day" width="70" height="70"></canvas>
+					<img src="http://openweathermap.org/img/wn/{{weather.icon}}.png" alt="Image" width="100px">
+				</div>
+				<div class="weather-grids">
+					<h4>Max {{weather.temperature_max}}°</h4>
+					<h2>{{weather.temperature}}°C</h2>
+					<h4>Min {{weather.temperature_min}}°</h4>
+				</div>
+				<div class="clear"> </div>
+			</div>
+			<div class="weather-bottom">	
+				<ul>
+					{% for x,y in forcast_data_list.items%}
+					<li class="bg"><h4>{{y.day}}</h4>
+						<figure class="icons">
+<!--							<canvas id="clear-night" width="40" height="40"></canvas>-->
+		<img src="http://openweathermap.org/img/wn/{{y.icon}}.png" alt="Image" width="100px">
+
+						</figure>
+						<h5>{{y.temperature_max}}</h5>
+						<h6>{{y.temperature_max}}°C</h6>
+					</li>
+					{% endfor%}
+				</ul>
+				<div class="clear"> </div>
+			</div>
+		</div>
+		<!--copyright-->
+		<div class="copyright">
+			<p>© 2020 Made with &#10084;&#65039; By Sahil Patel     | Template by <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
+		</div>
+		<!--//copyright-->
+	</div>	
+	<!--//main -->
+</body>
+</html>
+{{forecast_data_list}}
